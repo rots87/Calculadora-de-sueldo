@@ -33,7 +33,9 @@ public class CalculadoraRenta {
             System.out.println("Error en la lectura del sueldo\n"+ex);
         }
         }while(S.Sueldo<=-1);
-        System.out.println(S.Sueldo);
+        S.Seguro = Sueldo.seguro(S.Sueldo);
+        S.Afp = Sueldo.afp(S.Sueldo);
+        System.out.println(S.Afp);
         
     }
     
